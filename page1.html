@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona 1</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h2 {
+            scroll-margin-top: 110px;
+        }
+        
+        #grubosc:target {
+            background-color: yellow;
+        }
+
+         h2::after {
+            content: " ★";
+            color: #f39c12;
+            font-size: 24px;
+        }
+
+        ::selection {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .bold {
+            font-weight: bold;
+        }
+
+        .normal {
+            font-weight: normal;
+        }
+
+        .weight-100 {
+            font-weight: 100;
+        }
+
+        .weight-900 {
+            font-weight: 900;
+        }
+
+        .bolder {
+            font-weight: bolder;
+        }
+
+        .lighter {
+            font-weight: lighter;
+        }
+
+        .serif {
+            font-family: "Times New Roman", Georgia, serif;
+        }
+
+        .sans-serif {
+            font-family: Arial, Verdana, "Futura", sans-serif;
+        }
+
+        .monospace {
+            font-family: "Courier New", Fixedsys, monospace;
+        }
+
+        .cursive {
+            font-family: "Brush Script MT", cursive;
+        }
+
+        .fantasy {
+            font-family: Critter, fantasy;
+        }
+
+        .underline {
+            text-decoration: underline;
+        }
+
+        .overline {
+            text-decoration: overline;
+        }
+
+        .line-through {
+            text-decoration: line-through;
+        }
+
+        .no-decoration {
+            text-decoration: none;
+        }
+
+        .combined-decorations {
+            text-decoration: underline overline wavy red;
+        }
+
+        .double-dashed {
+            text-decoration: line-through dashed blue;
+        }
+
+        .medium {
+            font-size: medium;
+        }
+
+        .larger {
+            font-size: larger;
+        }
+
+        .smaller {
+            font-size: smaller;
+        }
+
+        .percent-125 {
+            font-size: 125%;
+        }
+
+        .size-em {
+            font-size: 1.5em;
+        }
+
+        .size-px {
+            font-size: 20px;
+        }
+
+        .size-pt {
+            font-size: 18pt;
+        }
+
+        .italic-text {
+            font-style: italic;
+        }
+
+        .uppercase-text {
+            text-transform: uppercase;
+        }
+
+        .capitalize-text {
+            text-transform: capitalize;
+        }
+        .normal-line-height {
+            line-height: normal;
+        }
+
+        .double-line-height {
+            line-height: 2;
+        }
+
+        .custom-line-height {
+            line-height: 1.5;
+        }
+
+        .text-left {
+            text-align: left;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="menu-spacer"></div>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="#">Menu</a>
+                    <ul>
+                        <li>
+                            <a href="page1.html">Czcionki</a>
+                            <ul>
+                                <li><a href="page1.html#grubosc">Grubość</a></li>
+                                <li><a href="page1.html#rodzina">Rodzina</a></li>
+                                <li><a href="page1.html#dekoracja">Dekoracja</a></li>
+                                <li><a href="page1.html#styl">Styl</a></li>
+                                <li><a href="page1.html#wysokosc">Wysokość</a></li>
+                                <li><a href="page1.html#wyrownanie">Wyrównanie</a></li>
+                                <li><a href="page1.html#wielkosc">Wielkość</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="page2.html">Tła</a>
+                            <ul>
+                                <li><a href="page2.html#bckgrndfull">Cały kontener</a></li>
+                                <li><a href="page2.html#bckgrndrepeat">Powtarzane</a></li>
+                                <li><a href="page2.html#bckgrndnorepeat">W rogu</a></li>
+                                <li><a href="page2.html#bckgrndrepeatx">Poziome</a></li>
+                                <li><a href="page2.html#bckgrndhalf">Połowa</a></li>
+                                <li><a href="page2.html#bckgrndfixed">Blokada</a></li>
+                                <li><a href="page2.html#bckgrndcontain">Proporcjonalne</a></li>
+                                <li><a href="page2.html#bckgrndstretch">Rozciągnięte</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="page3.html">Pozycjonowanie</a>
+                        </li>
+                        <li>
+                            <a href="page4.html">Tabela</a>
+                        </li>
+                        <li>
+                            <a href="page5.html">Modyfikacja</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+<main>
+    <hr>
+    <h2 id="grubosc">ZMIANA GRUBOŚĆI CZCIONKI</h2>
+    <p class="normal">Normal (400): Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro velit quidem culpa laboriosam doloremque ducimus.</p>
+    <p class="bold">Bold (700): Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro velit quidem culpa laboriosam doloremque ducimus.</p>
+    <p class="weight-100">(100): Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro velit quidem culpa laboriosam doloremque ducimus.</p>
+    <p class="weight-900">(900): Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro velit quidem culpa laboriosam doloremque ducimus.</p>
+    <p class="lighter">Lighter (względna): Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro velit quidem culpa laboriosam doloremque ducimus.</p>
+    <p class="bolder">Bolder (względna): Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro velit quidem culpa laboriosam doloremque ducimus.</p>
+    <hr>
+    <h2 id="rodzina">RODZINA CZCIONKI</h2>
+    <p class="serif">Serif: Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro velit quidem culpa laboriosam doloremque ducimus.</p>
+    <p class="sans-serif">Sans-serif: Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro velit quidem culpa laboriosam doloremque ducimus.</p>
+    <p class="monospace">Monospace: Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro velit quidem culpa laboriosam doloremque ducimus.</p>
+    <p class="cursive">Cursive: Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro velit quidem culpa laboriosam doloremque ducimus.</p>
+    <p class="fantasy">Fantasy: Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro velit quidem culpa laboriosam doloremque ducimus.</p>
+    <hr>
+    <h2 id="dekoracja">DEKORACJA TEKSTU</h2>
+    <p class="underline">Underline: Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro velit quidem culpa laboriosam doloremque ducimus.</p>
+    <p class="overline">Overline: Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro velit quidem culpa laboriosam doloremque ducimus.</p>
+    <p class="line-through">Line-through: Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro velit quidem culpa laboriosam doloremque ducimus.</p>
+    <p class="no-decoration">None: Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro velit quidem culpa laboriosam doloremque ducimus.</p>
+    <p class="combined-decorations">Underline, overline, wavy red: Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro velit quidem culpa laboriosam doloremque ducimus.</p>
+    <p class="double-dashed">Lline-through, dashed blue: Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro velit quidem culpa laboriosam doloremque ducimus.</p>
+    <hr>
+    <h2 id="styl">STYLE TEKSTU</h2>
+    <p class="italic-text">Kursywa: Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro velit quidem culpa laboriosam doloremque ducimus.</p>
+    <p class="uppercase-text">Wielkie litery: Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro velit quidem culpa laboriosam doloremque ducimus.</p>
+    <p class="capitalize-text">Capitalized: Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro velit quidem culpa laboriosam doloremque ducimus.</p>
+    <hr>
+    <h2 id="wysokosc">USTAWIANIE WYSOKOŚCI LINII</h2>
+    <p class="normal-line-height">Line-height: normal: Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro velit quidem culpa laboriosam doloremque ducimus.</p>
+    <p class="double-line-height">Line-height: 2: Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro velit quidem culpa laboriosam doloremque ducimus.</p>
+    <p class="custom-line-height">Line-height: 1.5: Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro velit quidem culpa laboriosam doloremque ducimus.</p>
+    <hr>
+    <h2 id="wyrownanie">WYRÓWNANIE TEKSTU</h2>
+    <p class="text-left">Left: Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro velit quidem culpa laboriosam doloremque ducimus.</p>
+    <p class="text-center">Center: Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro velit quidem culpa laboriosam doloremque ducimus.</p>
+    <p style="text-align: right;">Right: Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro velit quidem culpa laboriosam doloremque ducimus.</p>
+    <hr>
+    <h2 id="wielkosc">ZMIANA WIELKOŚĆI CZCIONKI</h2>
+    <p class="medium">Medium: Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro velit quidem culpa laboriosam doloremque ducimus.</p>
+    <p class="smaller">Smaller (względna): Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro velit quidem culpa laboriosam doloremque ducimus.</p>
+    <p class="larger">Larger (względna): Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro velit quidem culpa laboriosam doloremque ducimus.</p>
+    <p class="percent-125">125% bieżącej wartości: Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro velit quidem culpa laboriosam doloremque ducimus.</p>
+    <p class="size-px">20px: Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro velit quidem culpa laboriosam doloremque ducimus.</p>
+    <p class="size-pt">18pt: Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro velit quidem culpa laboriosam doloremque ducimus.</p>
+    <p class="size-em">1.5em: Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro velit quidem culpa laboriosam doloremque ducimus.</p>
+    <hr>
+</main>
+
+<footer>
+    <p>&copy; 2024 Labolatorium 3</p>
+</footer>
+
+</body>
+</html>
