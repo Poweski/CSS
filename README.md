@@ -1,1 +1,2 @@
 # CSS
+The project was created as part of the "Web Applications" course at university and aims to present the basic elements of HTML5 and CSS3 styles. The site includes the use of CSS selectors, classes, units and colors, and also illustrates the box-model and positioning of elements. The project also uses pseudo-classes and pseudo-elements to improve interactivity, and also implements text formatting to obtain a readable and aesthetic presentation of content. The project is an example of an effective combination of semantic HTML5 and modern CSS3.
